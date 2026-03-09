@@ -1,16 +1,29 @@
 import launch
+import os
 
-# 檢查 onnxruntime-gpu，如果沒有則退回到 cpu 版本
-if not launch.is_installed("onnxruntime-gpu") and not launch.is_installed("onnxruntime"):
-    # 嘗試安裝 GPU 版本，如果失敗會提示用戶
-    try:
-        launch.run_pip("install onnxruntime-gpu", "onnxruntime-gpu requirements for WD14 Tagger Neo")
-    except Exception:
-        print("WD14 Tagger Neo: GPU 版本安裝失敗，嘗試安裝 CPU 版本...")
-        launch.run_pip("install onnxruntime", "onnxruntime-cpu requirements for WD14 Tagger Neo")
+# 标记文件路径（扩展目录下）
+marker_file = os.path.join(os.path.dirname(__file__), "tagger_deps_installed")
 
-# 確保 requests 庫已安裝，如果未來要實現模型自動下載功能會需要
-if not launch.is_installed("requests"):
-    launch.run_pip("install requests", "requests library for WD14 Tagger Neo")
+#WD14
+required_packages = ["onnxruntime-gpu", 
+                     "onnxruntime", 
+                     "Pillow>=10.2.0"]
+if not os.path.exists(marker_file):
+    with open(marker_file, "w") as f:
+        f.write("Installed")# 创建标记文件
+    print("[Tagger-all]checking Python packages...")
+    if not launch.is_installed(required_packages[0]) and not launch.is_installed(required_packages[1]):
+        try:
+            launch.run_pip(f"install {required_packages[0]}", f"{required_packages[0]} requirements for forge Tagger")
+        except Exception:
+            launch.run_pip(f"install {required_packages[1]}", f"{required_packages[1]} requirements for forge Tagger")
+    for pkg in required_packages[2:]:
+        if not launch.is_installed(pkg):
+            print(f"[Tagger-all]Package '{pkg}' is not installed. Installing...")
+            try:
+                launch.run_pip(f"install {pkg}", f"{pkg} requirements for forge Tagger")
+            except Exception as e:
+                print(f"Warning: install {pkg} failed: {e}")
+                os.remove(marker_file)  # 安装失败，删除标记文件以便下次重试
+                break
 
-# Pillow 已經是 WebUI 的核心依賴，通常不需要單獨安裝。
