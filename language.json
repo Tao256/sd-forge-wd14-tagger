@@ -1,0 +1,158 @@
+{
+    "Single Image": {
+        "繁體中文": "單張圖片",
+        "English": "Single Image",
+        "简体中文": "单张图片"
+    },
+    "Batch Process": {
+        "繁體中文": "批量處理",
+        "English": "Batch Process",
+        "简体中文": "批量处理"
+    },
+    "Batch from Folder": {
+        "繁體中文": "資料夾批量處理",
+        "English": "Batch from Folder",
+        "简体中文": "文件夹批量处理"
+    },
+    "Input Image": {
+        "繁體中文": "輸入圖片",
+        "English": "Input Image",
+        "简体中文": "输入图片"
+    },
+    "Input Batch Images": {
+        "繁體中文": "輸入批量圖片",
+        "English": "Input Batch Images",
+        "简体中文": "输入批量图片"
+    },
+    "Input Folder": {
+        "繁體中文": "輸入資料夾",
+        "English": "Input Folder",
+        "简体中文": "输入文件夹"
+    },
+    "Select Tagger Model": {
+        "繁體中文": "選擇 Tagger 模型",
+        "English": "Select Tagger Model",
+        "简体中文": "选择 Tagger 模型"
+    },
+    "Threshold": {
+        "繁體中文": "標籤閥值",
+        "English": "Tag Threshold",
+        "简体中文": "标签阈值"
+    },
+    "Interrogate": {
+        "繁體中文": "開始分析",
+        "English": "Interrogate",
+        "简体中文": "分析"
+    },
+    "Unload Model": {
+        "繁體中文": "釋放模型",
+        "English": "Unload Model",
+        "简体中文": "释放模型"
+    },
+    "Output Tags": {
+        "繁體中文": "生成的標籤",
+        "English": "Generated Tags",
+        "简体中文": "生成的标签"
+    },
+    "Rating": {
+        "繁體中文": "分級",
+        "English": "Rating",
+        "简体中文": "分级"
+    },
+    "Send to Txt2Img": {
+        "繁體中文": "傳送到 文生圖 (Txt2Img)",
+        "English": "Send to Txt2Img",
+        "简体中文": "传送到 文生图 (Txt2Img)"
+    },
+    "Send to Img2Img": {
+        "繁體中文": "傳送到 圖生圖 (Img2Img)",
+        "English": "Send to Img2Img",
+        "简体中文": "传送到 图生图 (Img2Img)"
+    },
+    "Save Tags to Txt": {
+        "繁體中文": "標籤保存到文本",
+        "English": "Save Tags to Txt",
+        "简体中文": "标签保存到文本"
+    },
+    "Language": {
+        "繁體中文": "語言",
+        "English": "Language",
+        "简体中文": "语言"
+    },
+    "Select Model": {
+        "繁體中文": "選擇模型",
+        "English": "Select Model",
+        "简体中文": "选择模型"
+    },
+    "Select Lora": {
+        "繁體中文": "選擇 Lora",
+        "English": "Select Lora",
+        "简体中文": "选择 Lora"
+    },
+    "Text Input (for specific tasks)": {
+        "繁體中文": "文本輸入（針對特定任務）",
+        "English": "Text Input (for specific tasks)",
+        "简体中文": "文本输入（针对特定任务）"
+    },
+    "Num Beams": {
+        "繁體中文": "束搜索數量",
+        "English": "Num Beams",
+        "简体中文": "束搜索数量"
+    },
+    "Max token": {
+        "繁體中文": "最大標記數",
+        "English": "Max token",
+        "简体中文": "最大标记数"
+    },
+    "Select Task": {
+        "繁體中文": "選擇任務",
+        "English": "Select Task",
+        "简体中文": "选择任务"
+    },
+    "Select Precision": {
+        "繁體中文": "選擇精度",
+        "English": "Select Precision",
+        "简体中文": "选择精度"
+    },
+    "Select Attention Implementation": {
+        "繁體中文": "選擇注意力實現",
+        "English": "Select Attention Implementation",
+        "简体中文": "选择注意力实现"
+    },
+    "Fill Mask": {
+        "繁體中文": "填充掩码",
+        "English": "Fill Mask",
+        "简体中文": "填充掩码"
+    },
+    "Keep Model Loaded": {
+        "繁體中文": "保持模型加载",
+        "English": "Keep Model Loaded",
+        "简体中文": "保持模型加载"
+    },
+    "Generate": {
+        "繁體中文": "生成",
+        "English": "Generate",
+        "简体中文": "生成"
+    },
+    "Output Image": {
+        "繁體中文": "標注後圖片",
+        "English": "Output Image",
+        "简体中文": "标注后图片"
+    },
+    "Output Mask Image": {
+        "繁體中文": "掩碼圖",
+        "English": "Output Mask Image",
+        "简体中文": "掩码图"
+    },
+    "Output Data (JSON)": {
+        "繁體中文": "輸出數據 (JSON)",
+        "English": "Output Data (JSON)",
+        "简体中文": "输出数据 (JSON)"
+    },
+    "Extracted Tags": {
+        "繁體中文": "提取的標籤",
+        "English": "Extracted Tags",
+        "简体中文": "提取的标签"
+    }
+
+}
